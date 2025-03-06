@@ -17,7 +17,8 @@ public class PoliceAssuranceUpdateDto {
 	@NotNull(message = "L'ID ne peut pas être null")
     private Integer id;
 
-    @NotBlank(message = "Le nom ne peut pas être vide")
+	@NotBlank(message = "Le nom ne peut pas être vide")
+	@NotNull(message = "Le nom ne peut pas être null")
     private String nom;
 
     @NotNull(message = "Le statut ne peut pas être vide")
